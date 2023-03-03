@@ -1,7 +1,7 @@
 import { FC } from "react";
-import Title1 from "../../assets/title1.png";
-import Title2 from "../../assets/title2.png";
-import Comment from "../../assets/comment.png";
+import Title1 from "../../../assets/title1.png";
+import Title2 from "../../../assets/title2.png";
+import Comment from "../../../assets/comment.png";
 import styles from './styles.module.scss'
 
 const ThirdSection: FC = () => {

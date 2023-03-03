@@ -1,15 +1,27 @@
-import React from 'react';
-import FirstSection from './sections/FirstSection/index'
-import SecondSection from './sections/SecondSection/index'
-import ThirdSection from './sections/ThirdSection/index'
-import styles from './styles.module.scss'
+import React, { useState } from "react";
+import classNames from "classnames";
+import Activity from "./components/sections/Activity";
+import styles from "./styles.module.scss";
 
 function App() {
+  const [type, SetType] = useState("activity");
   return (
     <div className={styles.app}>
-      <FirstSection></FirstSection>
-      <SecondSection></SecondSection>
-      <ThirdSection></ThirdSection>
+      <div className={classNames(styles["btn-box"])}>
+        <button
+          className={classNames({ [styles.active]: type === "activity" })}
+          onClick={() => SetType("activity")}
+        >
+          活动
+        </button>
+        <button
+          className={classNames({ [styles.active]: type === "video" })}
+          onClick={() => SetType("video")}
+        >
+          视频
+        </button>
+      </div>
+      {type === "activity" && <Activity></Activity>}
     </div>
   );
 }

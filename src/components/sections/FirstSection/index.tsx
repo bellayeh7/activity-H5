@@ -1,5 +1,5 @@
 import { FC } from "react";
-import BannerImage from '../../assets/banner.png'
+import BannerImage from '../../../assets/banner.png'
 import styles from './styles.module.scss'
 
 

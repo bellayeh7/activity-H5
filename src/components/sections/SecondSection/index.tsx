@@ -1,9 +1,9 @@
 import { FC, useEffect, useRef, useState } from "react";
-import CartoonImage from "../../assets/cartoon.png";
-import FoodImage from "../../assets/food.png";
-import MovieImage from "../../assets/movie.png";
-import LifeImage from "../../assets/life.png";
-import Logo from "../../assets/logo.png";
+import CartoonImage from "../../../assets/cartoon.png";
+import FoodImage from "../../../assets/food.png";
+import MovieImage from "../../../assets/movie.png";
+import LifeImage from "../../../assets/life.png";
+import Logo from "../../../assets/logo.png";
 import styles from "./styles.module.scss";
 import classNames from "classnames";
 

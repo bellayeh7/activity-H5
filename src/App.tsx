@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 import Activity from "./components/sections/Activity";
+import LoadMore from "./components/loading/LoadMore";
 import styles from "./styles.module.scss";
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
         </button>
       </div>
       {type === "activity" && <Activity></Activity>}
+      {type === "video" && <LoadMore onLoadMore={()=>{
+        console.log('onLoadMore')
+      }}></LoadMore>}
     </div>
   );
 }
